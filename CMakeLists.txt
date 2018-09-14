@@ -59,6 +59,9 @@ endif()
 # Eigen
 include_directories(lib/3rdParty/Eigen)
 
+# HDF5
+find_package(HDF5)
+
 # libraries (ordering matters)
 add_subdirectory(modules/CvGl)
 add_subdirectory(modules/PoseExpr)
